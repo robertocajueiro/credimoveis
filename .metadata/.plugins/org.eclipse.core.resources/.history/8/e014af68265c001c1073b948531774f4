@@ -1,0 +1,5 @@
+package com.credimoveis.acsys.domain.service;
+
+public class CadastroEsprodutService {
+
+}

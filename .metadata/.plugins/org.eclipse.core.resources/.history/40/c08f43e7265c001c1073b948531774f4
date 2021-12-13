@@ -1,0 +1,5 @@
+package com.credimoveis.acsys.domain.exception;
+
+public class EntidadeNaoEncontradaException {
+
+}

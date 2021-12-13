@@ -1,0 +1,13 @@
+package com.credimoveis.acsys.api.controller;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@Data
+@Entity
+public class Esprodut {
+
+}
