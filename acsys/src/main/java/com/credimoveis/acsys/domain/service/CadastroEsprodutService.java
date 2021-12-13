@@ -14,7 +14,7 @@ import com.credimoveis.acsys.domain.repository.EsprodutRepository;
 public class CadastroEsprodutService {
 	
 	private static final String MSG_PRODUTO_EM_USO
-	= "Esprodut código %d não pode ser removida, pois está em uso";
+	= "Esprodut código %d não pode ser removida, pois está em uso ";
 
 	private static final String MSG_PRODUTO_NAO_ENCONTRADO 
 		= "Não existe esse produto cadastrado no ESPRODUT com código %d ";
