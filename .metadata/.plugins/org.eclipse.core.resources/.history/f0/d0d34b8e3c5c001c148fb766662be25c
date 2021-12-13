@@ -17,7 +17,7 @@ public class CadastroEsprodutService {
 	= "Esprodut código %d não pode ser removida, pois está em uso";
 
 	private static final String MSG_PRODUTO_NAO_ENCONTRADO 
-		= "Não existe esse produto cadastrado no ESPRODUT com código %d ";
+		= "Não existe esse produto cadastrado no Esprodut com código %d";
 	
 	@Autowired
 	private EsprodutRepository EsprodutRepository;
