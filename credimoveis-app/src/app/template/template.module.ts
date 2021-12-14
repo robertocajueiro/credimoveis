@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from './navbar/navbar.component';
 
-import {  MontagensComponent} from './montagens.component'
 
 
 @NgModule({
   declarations: [
-    MontagensComponent
+    NavbarComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    MontagensComponent
+    NavbarComponent
   ]
 })
-export class MontagensModule { }
+export class TemplateModule { }
