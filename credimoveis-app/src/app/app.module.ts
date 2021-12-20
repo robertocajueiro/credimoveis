@@ -1,3 +1,4 @@
+import { MontagensModule } from './montagens/montagens.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,7 +15,8 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TemplateModule
+    TemplateModule,
+    MontagensModule
   ],
   providers: [],
   bootstrap: [AppComponent]
