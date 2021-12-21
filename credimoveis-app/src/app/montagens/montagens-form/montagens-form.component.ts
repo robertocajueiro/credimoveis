@@ -10,18 +10,16 @@ import { Esprodut } from '../esprodut';
 export class MontagensFormComponent implements OnInit {
 
   esprodut: Esprodut;
-  nome: string = 'Roberto'
 
   constructor() {
     this.esprodut = new Esprodut();
-    this.esprodut.descr = 'Moveis';
   }
 
   ngOnInit(): void {
   }
 
   clicar(){
-    window.alert('Cliquei Galera!!!')
+    console.log(this.esprodut)
   }
 
 }

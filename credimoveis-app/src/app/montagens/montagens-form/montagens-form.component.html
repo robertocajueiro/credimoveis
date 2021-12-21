@@ -9,15 +9,16 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Código:</label>
-            <input type="text" class="form-control"/>
+            <label>Código: *</label>
+            <input type="text" [(ngModel)]="esprodut.codigo" name="codigo" class="form-control"/>
           </div>
           </div>
 
           <div class="col-md-6">
             <div class="form-group">
               <label>Descrição:</label>
-              <input type="text" class="form-control" disabled="true"/>
+              <input type="text" class="form-control"
+                      [ngModel]="esprodut.descr" name="descr" name="descr" disabled="true" />
             </div>
         </div>
         </div>
@@ -26,14 +27,16 @@
           <div class="col-md-6">
             <div class="form-group">
               <label>Valor para ser alterado: *</label>
-              <input type="text" class="form-control" />
+              <input type="text" class="form-control"
+                          [(ngModel)]="esprodut.vlr_montagem" name="vlr_montagem" />
             </div>
           </div>
 
             <div class="col-md-6">
               <div class="form-group">
                 <label>Valor Original:</label>
-                <input type="text" class="form-control" disabled="true"/>
+                <input type="text" class="form-control" disabled="true"
+                            [ngModel]="esprodut.vlr_monta_aux" name="vlr_monta_aux"/>
               </div>
           </div>
         </div>
