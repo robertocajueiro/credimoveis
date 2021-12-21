@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -17,8 +16,7 @@ import com.credimoveis.acsys.domain.repository.EsprodutRepository;
 import com.credimoveis.acsys.domain.service.CadastroEsprodutService;
 
 @RestController
-@RequestMapping(value = "/api/esprodut")
-@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping(value = "/esprodut")
 public class EsprodutController {
 	
 	@Autowired

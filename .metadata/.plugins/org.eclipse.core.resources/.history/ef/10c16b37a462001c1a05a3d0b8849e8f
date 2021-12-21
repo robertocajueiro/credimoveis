@@ -17,8 +17,7 @@ import com.credimoveis.acsys.domain.repository.EsprodutRepository;
 import com.credimoveis.acsys.domain.service.CadastroEsprodutService;
 
 @RestController
-@RequestMapping(value = "/api/esprodut")
-@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping(value = "/esprodut")
 public class EsprodutController {
 	
 	@Autowired
@@ -28,10 +27,12 @@ public class EsprodutController {
 	private CadastroEsprodutService cadastroProduto;
 	
 	@GetMapping
+	@CrossOrigin(origins = "http://localhost:4200")
 	public List<Esprodut> listar() {
 		return esprodutRepository.findAll();
 	}
 	
+	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping("/{produtoId}")
 	public Esprodut buscar(@PathVariable Long produtoId) {
 		return cadastroProduto.buscarOuFalhar(produtoId);

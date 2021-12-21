@@ -13,14 +13,18 @@ export class MontagensFormComponent implements OnInit {
   esprodut!: Esprodut;
 
   constructor( private service: MontagensService) {
-    this.esprodut = service.getEsprodut();
+    this.esprodut = new Esprodut();
   }
 
   ngOnInit(): void {
   }
 
 onSubmit(){
-  console.log(this.esprodut)
+  this.service
+    .salvar(this.esprodut)
+    .subscribe( response => {
+      console.log(response)
+    })
 }
 
 }

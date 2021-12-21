@@ -17,8 +17,8 @@ import com.credimoveis.acsys.domain.repository.EsprodutRepository;
 import com.credimoveis.acsys.domain.service.CadastroEsprodutService;
 
 @RestController
-@RequestMapping(value = "/api/esprodut")
-@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping(value = "/esprodut")
+@CrossOrigin("*")
 public class EsprodutController {
 	
 	@Autowired
