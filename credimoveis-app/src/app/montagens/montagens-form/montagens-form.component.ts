@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Esprodut } from '../esprodut';
+import { MontagensService } from '../../montagens.service'
 
 @Component({
   selector: 'app-montagens-form',
@@ -9,17 +10,17 @@ import { Esprodut } from '../esprodut';
 })
 export class MontagensFormComponent implements OnInit {
 
-  esprodut: Esprodut;
+  esprodut!: Esprodut;
 
-  constructor() {
-    this.esprodut = new Esprodut();
+  constructor( private service: MontagensService) {
+    this.esprodut = service.getEsprodut();
   }
 
   ngOnInit(): void {
   }
 
-  clicar(){
-    console.log(this.esprodut)
-  }
+onSubmit(){
+  console.log(this.esprodut)
+}
 
 }

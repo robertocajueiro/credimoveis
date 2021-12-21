@@ -1,3 +1,4 @@
+import { MontagensService } from './montagens.service';
 import { MontagensModule } from './montagens/montagens.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,7 +19,9 @@ import { HomeComponent } from './home/home.component';
     TemplateModule,
     MontagensModule
   ],
-  providers: [],
+  providers: [
+    MontagensService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
