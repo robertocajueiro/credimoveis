@@ -9,9 +9,19 @@ import { Esprodut } from '../esprodut';
 })
 export class MontagensFormComponent implements OnInit {
 
-  constructor() { }
+  esprodut: Esprodut;
+  nome: string = 'Roberto'
+
+  constructor() {
+    this.esprodut = new Esprodut();
+    this.esprodut.descr = 'Moveis';
+  }
 
   ngOnInit(): void {
+  }
+
+  clicar(){
+    window.alert('Cliquei Galera!!!')
   }
 
 }
